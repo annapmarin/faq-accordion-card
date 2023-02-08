@@ -137,6 +137,19 @@ main {
   margin-top: 15px;
 }
 
+.attribution {
+  text-align: center;
+  position: relative;
+  top: 730px;
+  color: white;
+}
+.attribution a {
+  color: white;
+}
+.attribution a:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+
 @media screen and (max-width: 1022px) {
   .container {
     margin-top: 150px;
@@ -184,5 +197,8 @@ main {
     height: auto;
     margin: 10px;
     width: 280px;
+  }
+  .attribution {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

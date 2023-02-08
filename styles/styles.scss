@@ -165,6 +165,20 @@ main {
   }
 }
 
+.attribution {
+  text-align: center;
+  position: relative;
+  top: 730px;
+  color: white;
+
+  a {
+    color: white;
+    
+    &:hover {
+      color: $orange;
+    }
+  }
+}
 
 
 
@@ -228,6 +242,10 @@ main {
     width: 280px;
   }
 
+}
+
+.attribution {
+  display: none;
 }
 
 }
