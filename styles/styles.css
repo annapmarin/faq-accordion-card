@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(180deg, hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%)) no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  transform: scale(1);
+}
+
+.container {
+  background-color: white;
+  margin-top: 10%;
+  min-width: 800px;
+  min-height: 400px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgb(92, 92, 92);
+  overflow: hidden;
+}
+.container__image {
+  margin-left: -130px;
+  z-index: 2;
+}
+.container__image-shadow {
+  position: absolute;
+  top: 400px;
+  width: 493px;
+  height: 340px;
+  background-color: rgb(239, 239, 239);
+  transform: rotate(30deg) skew(-30deg) translateY(-138px) translateX(-314px);
+  border-radius: 25px;
+  z-index: -1;
+}
+.container__image-shadow2 {
+  position: absolute;
+  top: 400px;
+  width: 493px;
+  height: 340px;
+  border: 2px solid rgb(239, 239, 239);
+  transform: rotate(30deg) skew(-30deg) translateY(-404px) translateX(-659px);
+  border-radius: 25px;
+  z-index: -1;
+}
+.container__image-shadow3 {
+  position: absolute;
+  top: 400px;
+  width: 493px;
+  height: 340px;
+  border: 2px solid rgb(239, 239, 239);
+  transform: rotate(30deg) skew(-30deg) translateY(-349px) translateX(-566px);
+  border-radius: 25px;
+  z-index: -1;
+}
+.container__image2 {
+  position: fixed;
+}
+.container__image2 img {
+  position: absolute;
+  top: -250px;
+  left: -10px;
+}
+.container__accordion {
+  margin-left: 100px;
+  width: 400px;
+  height: auto;
+}
+.container__accordion h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.container__accordion h2:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+.container__title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.container__space {
+  max-width: 400px;
+  height: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(239, 239, 239);
+}
+.container__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.container__element img {
+  width: 10px;
+  height: 7px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.container__element p {
+  display: none;
+}
+.container__element--active {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.container__element--active h2 {
+  font-weight: 700;
+}
+.container__element--active img {
+  width: 10px;
+  height: 7px;
+  rotate: 180deg;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.container__element--active p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: hsl(240deg, 6%, 50%);
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1022px) {
+  .container {
+    margin-top: 150px;
+    min-width: 200px;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    flex-direction: column;
+    position: fixed;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .container__title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .container__image {
+    margin: 0;
+  }
+  .container__image #main-image {
+    content: url(../images/illustration-woman-online-mobile.svg);
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    margin: 0 auto;
+  }
+  .container__image2 img {
+    display: none;
+  }
+  .container__image-shadow {
+    top: 320px;
+    width: 186px;
+    height: 156px;
+    background-color: rgb(239, 239, 239);
+    transform: rotate(30deg) skew(-30deg) translateY(-353px) translateX(-332px);
+    border-radius: 14px;
+  }
+  .container__image-shadow2, .container__image-shadow3 {
+    display: none;
+  }
+  .container__accordion {
+    min-width: 200px;
+    height: auto;
+    margin: 10px;
+    width: 280px;
+  }
+}/*# sourceMappingURL=styles.css.map */
